@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dimlom.Controller">
+   <children>
+      <MenuBar fx:id="MenuBar" layoutX="14.0" layoutY="14.0">
+        <menus>
+          <Menu fx:id="MenuBarFile" mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem fx:id="MenuOpen" mnemonicParsing="false" text="Відкрити файл" />
+                  <MenuItem fx:id="MenuSave" mnemonicParsing="false" text="Зберегти файл" />
+            </items>
+          </Menu>
+          <Menu fx:id="MenuBarChange" mnemonicParsing="false" text="Змінити">
+            <items>
+              <MenuItem fx:id="MenuClear" mnemonicParsing="false" text="Видалити текст" />
+            </items>
+          </Menu>
+          <Menu fx:id="MenuBarHelp" mnemonicParsing="false" text="Допомога">
+            <items>
+              <MenuItem fx:id="MenuAbout" mnemonicParsing="false" text="О програмі" />
+                  <MenuItem fx:id="MenuInform" mnemonicParsing="false" text="Інформація щодо індексів" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutY="50.0" prefHeight="750.0" prefWidth="900.0" style="-fx-background-color: #DCDCDC;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <TextArea fx:id="TextArea" layoutX="14.0" layoutY="14.0" prefHeight="725.0" prefWidth="875.0" wrapText="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnStart" layoutX="450.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="300.0" text="Тицяй" />
+      <Text fx:id="txtindexKL" fill="WHITE" layoutX="900.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Індекс Колман-Ліау" textAlignment="CENTER" wrappingWidth="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="indexFL" editable="false" layoutX="980.0" layoutY="100.0" promptText="Only output" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="100.0" />
+      <Text fx:id="txtindexFlesh" fill="WHITE" layoutX="900.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Індекс Флеша" textAlignment="CENTER" wrappingWidth="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="indexKL" editable="false" layoutX="976.0" layoutY="174.0" promptText="Only output" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="200.0" />
+      <Text fx:id="txtindexFK" fill="WHITE" layoutX="904.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Індекс Флеша-Кінкейда" textAlignment="CENTER" wrappingWidth="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="indexKL1" editable="false" layoutX="979.0" layoutY="300.0" promptText="Only output" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="300.0" />
+      <Text fx:id="CountPar" fill="WHITE" layoutX="900.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.0" AnchorPane.bottomAnchor="300.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="CountST" fill="WHITE" layoutX="904.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.0" AnchorPane.bottomAnchor="250.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="CountWrd" fill="WHITE" layoutX="904.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.0" AnchorPane.bottomAnchor="200.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="CountLTT" fill="WHITE" layoutX="904.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.0" AnchorPane.bottomAnchor="150.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="CountSMB" fill="WHITE" layoutX="914.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.0" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="CountSKL" fill="WHITE" layoutX="904.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.0" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnlng" layoutX="1110.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Language" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Text fx:id="txtindexAuto" fill="WHITE" layoutX="900.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автоматичний індекс" textAlignment="CENTER" wrappingWidth="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="autoindex" editable="false" layoutX="979.0" layoutY="400.0" promptText="Only output" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="400.0" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
